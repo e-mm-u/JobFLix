@@ -5,6 +5,8 @@ import AllJobs from "../components/Jobs/AllJobs";
 import Experienced from "../components/Jobs/Experienced";
 import Fresher from "../components/Jobs/Fresher";
 import Main from "../Layout/Main";
+import Login from "../components/common/Login";
+import SignUp from "../components/common/SignUp";
 
 export const routes = createBrowserRouter([
     {
@@ -34,6 +36,15 @@ export const routes = createBrowserRouter([
 
                 ]
             },
+            {
+                path : '/login',
+                element : <Login> </Login>
+            },
+            {
+                path : '/signup',
+                element : <SignUp></SignUp>
+            }
+
         ]
 
     },
